@@ -99,7 +99,7 @@ The application is configured to serve the React frontend from the Express backe
    - Configure the service:
      - **Name**: `lcs-api`
      - **Root Directory**: `backend`
-     - **Build Command**: `npm install`
+     - **Build Command**: `cd ../frontend && npm install && npm run build && cd ../backend && mkdir -p build && cp -r ../frontend/build/* ./build/ && npm install`
      - **Start Command**: `node server.js`
      - **Environment**: `Node`
    - Click "Create Web Service"
